@@ -7,6 +7,7 @@ import java.util.List;
 
 @Repository
 public interface Taskrepo extends MongoRepository<Task,String> {
+
     List<Task> findByCompleted(boolean completed);
     List<Task> findByPriority(String priority);
 
