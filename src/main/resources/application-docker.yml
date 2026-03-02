@@ -1,0 +1,13 @@
+spring:
+  mongodb:
+    host: ${SPRING_DATA_MONGODB_HOST:localhost}
+    port: ${SPRING_DATA_MONGODB_PORT:27017}
+    database: ${SPRING_DATA_MONGODB_DATABASE:taskdb}
+    username: ${SPRING_DATA_MONGODB_USERNAME:admin}
+    password: ${SPRING_DATA_MONGODB_PASSWORD:admin123}
+    authentication-database: ${SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE:admin}
+
+# Disable JPA/Hibernate auto-configuration
+#
+server:
+  port: 8080
